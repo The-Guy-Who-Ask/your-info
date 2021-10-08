@@ -1,0 +1,66 @@
+*{
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+
+}
+body{
+    background: #000;
+    animation: bg 2s ease alternate infinite;
+}
+h1{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 3em;
+    text-align: center;
+    height: 3em;
+    align-items: center;
+    justify-content: center;
+    animation: bigColor 2s alternate-reverse ease infinite;
+}
+.ul{
+    display: flex;
+    font-size: 1.6em;
+    justify-content: space-around;
+}
+ul{
+    list-style-type: none;
+    animation: color 3s alternate-reverse ease-in-out infinite;
+    transition: all 3s ease;
+}
+@keyframes color {
+    10%{
+        color: white;
+    }
+    20%{
+        background: -webkit-linear-gradient(rgb(124, 197, 197), rgb(150, 230, 203));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    50%{
+        background: -webkit-linear-gradient(aqua, aquamarine);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    90%{
+        background: -webkit-linear-gradient(rgb(0, 114, 114), rgb(0, 121, 80));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+@keyframes bigColor {
+    from{
+        color: aqua;
+    }
+    to{
+        color: aquamarine;
+    }
+}
+@keyframes bg{
+    from{
+        background: #000;
+    }
+    to{
+        background: rgb(22, 16, 16);
+    }
+}
