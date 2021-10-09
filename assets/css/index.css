@@ -8,7 +8,7 @@ body{
     background: #000;
     animation: bg 2s ease alternate infinite;
 }
-h1{
+.head{
     display: flex;
     flex-wrap: wrap;
     font-size: 3em;
